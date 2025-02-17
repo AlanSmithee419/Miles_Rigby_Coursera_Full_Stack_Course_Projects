@@ -1,0 +1,14 @@
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\bin\Debug\net7.0\StockManager.exe
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\bin\Debug\net7.0\StockManager.deps.json
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\bin\Debug\net7.0\StockManager.runtimeconfig.json
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\bin\Debug\net7.0\StockManager.dll
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\bin\Debug\net7.0\StockManager.pdb
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\obj\Debug\net7.0\StockManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\obj\Debug\net7.0\StockManager.AssemblyInfoInputs.cache
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\obj\Debug\net7.0\StockManager.AssemblyInfo.cs
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\obj\Debug\net7.0\StockManager.csproj.CoreCompileInputs.cache
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\obj\Debug\net7.0\StockManager.dll
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\obj\Debug\net7.0\refint\StockManager.dll
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\obj\Debug\net7.0\StockManager.pdb
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\obj\Debug\net7.0\StockManager.genruntimeconfig.cache
+C:\Users\miles\Documents\Coursera\Course 1\StockManager\obj\Debug\net7.0\ref\StockManager.dll

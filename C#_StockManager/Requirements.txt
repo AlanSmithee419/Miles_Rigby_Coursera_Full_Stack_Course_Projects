@@ -1,0 +1,35 @@
+Goal:
+    Develop a C# program which allows a user to store information on stock items and
+    their quantities. The program should allow the user to add new stock items, provide
+    the price and current stock level of an item, and update the stock level and price of 
+    an item, as well as display all stock items and their prices/quantities. The program 
+    should also allow the user to tell it when a purchase of stock has been made, and update 
+    the stock levels.
+
+Data storage:
+    Store the names of the stock items, prices, and their quantities in seperate lists with matching
+    indexes.
+
+Functionality:
+    1. Display all stock items and their prices/quantities
+    2. Add a new stock item, given a name, price and quantity
+    3. Remove a stock item, given a name
+    4. Provide the current price of an item
+    5. Provide the current stock level of an item
+    6. Change the price of an item
+    7. Update the stock level of an item - both to a specific value and by a specific amount,
+       for handling restocking, purchases, or other changes.
+
+    Ensure proper error handling is in place for invalid input.
+    Use methods to handle each of the above processes.
+    Use methods (switch cases?) to validate user input.
+
+Main structure:
+    use a while loop to keep the program running until the user decides to exit.
+    Use a switch statement to determine which process to use based on the user's input.
+    All menus should be their own methods, and should be called from the Main() method.
+
+Menus:
+    All user inputs in menus should be checked for a return to the main menu option, 
+    at which point the current method should update the menu variable to the main menu 
+    and return.
