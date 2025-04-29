@@ -1,0 +1,22 @@
+name: Deploy GitHub Pages Sites
+
+on:
+  push:
+    branches: [ main ]  # Or your default branch name
+  workflow_dispatch:    # Allows manual triggering
+
+jobs:
+  # This job deploys the first site
+  deploy-portfolio-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy Portfolio
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: PortfolioSite                # The folder containing your site files
+          target-folder: PortfolioSite         # The folder where it will be deployed
+          branch: gh-pages             # The branch where GitHub Pages content lives
+          clean: true                  # Automatically remove deleted files from the deploy branch
