@@ -16,4 +16,8 @@ folders, listed below in order of creation:
                    Skills section with appropriate icons, and a form with input validation (currently
                    does nothing, the data is not sent anywhere). There is also a Projects section with
                    filtering projects with different categories, and a card layout. Images in Projects
-                   can be clicked to display them in a modal view.
+                   can be clicked to display them in a modal view. The site is also responsive to narrow
+                   screens and windows, switching to a more vertical layout below 768px width.
+                   The site is created through github pages and can be viewed at:
+
+       https://alansmithee419.github.io/Miles_Rigby_Coursera_Full_Stack_Course_Projects/PortfolioSite/
