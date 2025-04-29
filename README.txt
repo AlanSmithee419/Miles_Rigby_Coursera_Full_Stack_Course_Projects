@@ -10,3 +10,10 @@ folders, listed below in order of creation:
                        more object oriented approach, having distinct classes in seperate project code 
                        files for different funcitonality, such as for handling user input, a Library class 
                        for storing books, and a User class for borrowing and returning books to the library
+
+3. PortfolioSite - an HTML/CSS/JavaScript project for a Portfolio website, containing relevant sections
+                   including an About Me (currently containing Lorem Ipsum-like placeholder text), a
+                   Skills section with appropriate icons, and a form with input validation (currently
+                   does nothing, the data is not sent anywhere). There is also a Projects section with
+                   filtering projects with different categories, and a card layout. Images in Projects
+                   can be clicked to display them in a modal view.
