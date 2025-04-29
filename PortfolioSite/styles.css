@@ -1,0 +1,320 @@
+/* General reset */
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/*Page title styles */
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Navigation styles */
+nav {
+    text-align: center;
+}
+
+/* Remove nav menu icon for large screens */
+#menu-toggle { display: none; }
+#menu-icon { display: none; }
+
+/* Nav list styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav link styles */
+nav a {
+    color: #00d5ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Change nav link colour on hover */
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Seperate sections from each other */
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Seperate articles within sections from each other */
+article {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Basic styling for images */
+.basic-image {
+    width: 60%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: 75px;
+    margin-top: 15px;
+}
+
+.basic-caption {
+    margin-left: 75px;
+}
+
+/* Image classes for placing images flush to each other so they appear as one */
+.no-gap-below {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    display: block;
+}
+
+.no-gap-above {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+    display: block;
+}
+
+/* Basic list styling */
+.basic-list li {
+    margin-left: 45px;
+}
+
+
+/* Card layout for projects section */
+#projects {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+    width: 100%;
+}
+
+#projects-filter-button:hover {
+    cursor: pointer;
+}
+
+#projects article {
+    display: grid;
+    grid-template-areas: 
+        "title image"
+        "text image";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 75%;
+    text-align: left;
+    align-self: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects article:hover {
+    transform: translateX(15%);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#projects article figure {
+    grid-area: image;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#projects article h4 {
+    grid-area: title;
+    font-size: 1.5em;
+    margin: 15px 15px 5px;
+    color: #333;
+    align-self: end;
+}
+
+#projects article p {
+    grid-area: text;
+    font-size: 1em;
+    color: #666;
+    margin: 0 15px 15px;
+}
+
+/* Styling canvas for js background drawing */
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind other content */
+    pointer-events: none; /* Prevent interaction with the canvas */
+}
+
+#background-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind the content */
+    pointer-events: none; /* Prevent interaction with the canvas */
+}
+
+/* Modal view for images */
+#image-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#image-modal-content {
+    position: relative;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image-modal-img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+#image-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Media modifications for 768px and narrower screens */
+@media (max-width: 768px) {
+
+    /* Make title text smaller */
+    #title {font-size: 2em;}
+
+    /* Modify projects cars to have more vertical layout */
+    #projects {
+        flex-direction: column;
+    }
+
+    #projects article {
+        grid-template-areas: 
+            "title"
+            "text"
+            "image";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        width: 90%;
+    }
+
+    #projects article figure {
+        height: auto;
+    }
+
+    #projects article h4 {
+        font-size: 1.2em;
+        margin: 10px 10px 5px;
+    }
+
+    #projects article p {
+        font-size: 0.9em;
+        margin: 0 10px 10px;
+    }
+
+    .basic-image {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .basic-caption {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .basic-list li {
+        margin-left: 20px;
+    }
+
+    /* Make contact section vertical */
+    #contact form input,
+    #contact form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Replace nav section with hamburger menu icon */
+    nav ul {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        text-align: center;
+        color: #00d5ff;
+    }
+
+    #menu-toggle:checked + #menu-icon + ul {
+        display: block;
+    }
+
+    #filter-menu label {
+        display: block;
+    }
+
+}
