@@ -11,13 +11,14 @@ folders, listed below in order of creation:
                        files for different funcitonality, such as for handling user input, a Library class 
                        for storing books, and a User class for borrowing and returning books to the library
 
-3. PortfolioSite - an HTML/CSS/JavaScript project for a Portfolio website, containing relevant sections
-                   including an About Me (currently containing Lorem Ipsum-like placeholder text), a
-                   Skills section with appropriate icons, and a form with input validation (currently
-                   does nothing, the data is not sent anywhere). There is also a Projects section with
-                   filtering projects with different categories, and a card layout. Images in Projects
-                   can be clicked to display them in a modal view. The site is also responsive to narrow
-                   screens and windows, switching to a more vertical layout below 768px width.
+3. PortfolioSite - This is a Coursera project for learning, not a complete portfolio of all my projects.
+                   an HTML/CSS/JavaScript project for a Portfolio website, containing relevant sections
+                   including an About Me (containing Lorem Ipsum-like placeholder text), a Skills section 
+                   with appropriate icons, and a form with input validation (does nothing, the data is not 
+                   sent anywhere). There is also a Projects section with filtering projects with different 
+                   categories, and a card layout. Images in Projects can be clicked to display them in a 
+                   modal view. The site is also responsive to narrow screens and windows, switching to a 
+                   more vertical layout below 768px width.
                    The site is created through github pages and can be viewed at:
 
        https://alansmithee419.github.io/Miles_Rigby_Coursera_Full_Stack_Course_Projects/PortfolioSite/
